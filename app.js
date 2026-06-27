@@ -137,3 +137,43 @@ Person.prototype.greet = function() {
 const name = new Person("Sachin")
 
 name.greet() // My name is Sachin
+
+
+
+
+
+
+// Student Class System
+
+
+class Student {
+    constructor(name, marks) {
+        this.name = name
+        this.marks = marks
+    }
+
+    getGrade() {
+        if (this.marks >= 90) {
+            return "A"
+        } else if (this.marks >= 75) {
+            return "B"
+        } else if (this.marks >= 60) {
+            return "C"
+        } else {
+            return "F"
+        }
+    }
+}
+
+
+const s1 = new Student("Sachin", 93)
+const s2 = new Student("Priyanka", 76)
+const s3 = new Student("Deep", 60)
+const s4 = new Student("Carry", 50)
+
+
+
+console.log(s1.getGrade()); // A
+console.log(s2.getGrade()); // B
+console.log(s3.getGrade()); // C
+console.log(s4.getGrade()); // F
