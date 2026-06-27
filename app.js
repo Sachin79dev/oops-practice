@@ -96,3 +96,26 @@ const user = {
 const fn = user.greet.bind(user);
 
 fn(); // Sachin
+
+
+
+
+
+
+
+
+// Create an Inheritance Chain
+
+const animal = {
+    eats: true
+}
+
+
+const dog = Object.create(animal)
+
+console.log(dog.eats); // true
+
+
+
+
+
