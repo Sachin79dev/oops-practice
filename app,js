@@ -31,3 +31,31 @@ show();
 
 
 // First: The browser will print the window API,  Second: The node will print the node API, Third: The "use strict" will print undefined.
+
+
+
+
+
+
+
+// call() in OOPs 
+
+
+function introduce() {
+    console.log(this.name);
+}
+
+
+const person = {
+    name: "Sachin"
+}
+
+
+introduce.call(person) // Sachin
+
+
+
+
+
+
+
