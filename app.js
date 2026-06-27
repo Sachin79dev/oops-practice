@@ -226,3 +226,39 @@ dev.code() // And his salary is: 300000
 
 
 
+// Bank Account (Interview - Level)
+
+
+
+class BankAccount {
+    #balance = 0
+    deposit(amount) {
+        if(amount >= 0) {
+            this.#balance += amount
+        } else {
+            console.log(`You can only deposit more than 0 balance`);
+            
+        }
+    }
+    withdraw(amount) {
+        if(amount <= this.#balance) {
+            this.#balance -= amount
+        } else {
+            console.log("Insufficiant Balance");
+            
+        }
+    }
+    getBalance() {
+        return this.#balance
+    }
+}
+
+
+const acc = new BankAccount(this.amount)
+
+
+acc.deposit(1000);
+acc.withdraw(300)
+
+
+console.log(acc.getBalance()); // 700
