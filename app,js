@@ -59,3 +59,17 @@ introduce.call(person) // Sachin
 
 
 
+// apply() in OOPs
+
+
+function introduce(city, country) {
+    console.log(`${this.name} from ${city} (${country})`);
+}
+
+
+const person = {
+    name: "Sachin"
+}
+
+// introduce.call(person, "Agra", "India") // Sachin from Agra (India)
+introduce.apply(person, ["Agra", "India"]) // Sachin from Agra (India)
