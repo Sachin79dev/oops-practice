@@ -13,3 +13,21 @@ const user = {
 
 
 user.greet(); // "Ritik"
+
+
+
+
+
+// Default Binding
+
+
+"use strict";
+
+function show() {
+    console.log(this);
+}
+
+show();
+
+
+// First: The browser will print the window API,  Second: The node will print the node API, Third: The "use strict" will print undefined.
