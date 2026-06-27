@@ -119,3 +119,21 @@ console.log(dog.eats); // true
 
 
 
+
+
+
+// Prototype Method 
+
+function Person(name) {
+    this.name = name
+}
+
+
+Person.prototype.greet = function() {
+    console.log(`My name is ${this.name}`);
+}
+
+
+const name = new Person("Sachin")
+
+name.greet() // My name is Sachin
