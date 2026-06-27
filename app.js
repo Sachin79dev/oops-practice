@@ -177,3 +177,52 @@ console.log(s1.getGrade()); // A
 console.log(s2.getGrade()); // B
 console.log(s3.getGrade()); // C
 console.log(s4.getGrade()); // F
+
+
+
+
+
+
+
+
+// Employee Inheritance 
+
+
+
+class Employee {
+    constructor(name, salary) {
+        this.name = name
+        this.salary = salary
+    }
+
+    work() {
+        console.log(`${this.name} is Employee`);
+    }
+}
+
+
+
+class Developer extends Employee {
+    constructor(name, salary) {
+        super(name, salary)
+    }
+    code() {
+        console.log(`And his salary is: ${this.salary}`);
+        
+    }
+}
+
+
+const dev = new Developer("Sachin", 300000)
+
+
+dev.work() // Sachin is Employee
+dev.code() // And his salary is: 300000
+
+
+
+
+
+
+
+
