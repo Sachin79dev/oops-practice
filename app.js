@@ -549,3 +549,14 @@ console.log(Math.max.apply(null, arr)); // 50
 
 
 
+// Create Prototype Inheritance
+
+const animal = {
+    eats: true
+}
+
+
+const dog = Object.create(animal)
+
+
+console.log(dog.eats); // true 
