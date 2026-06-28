@@ -485,3 +485,25 @@ console.log(arr.push === Array.prototype.push);
 
 
 
+// Lost this
+
+
+const user = {
+    name: "Sachin",
+    greet() {
+        console.log(this.name);
+    }
+}
+
+
+const fn = user.greet.bind(user);
+
+
+fn() // Sachin
+
+
+
+
+
+
+
