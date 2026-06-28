@@ -449,3 +449,22 @@ btn.addEventListener("click", () => {
 
 
 
+// Constructor Function
+
+
+function Person(name) {
+    this.name = name
+}
+
+
+const user = new Person("Sachin")
+
+
+console.log(user); // Person {name: 'Sachin'}
+
+
+
+
+
+
+
