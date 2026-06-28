@@ -309,3 +309,21 @@ show() // will print window object API
 
 
 
+// Object Method 
+
+
+const car = {
+    brand: "BMW",
+    showBrand() {
+        console.log(this.brand);
+    }
+}
+
+
+car.showBrand() // BMW
+
+
+
+
+
+
