@@ -468,3 +468,20 @@ console.log(user); // Person {name: 'Sachin'}
 
 
 
+// Prototype Lookup
+
+
+
+const arr = [1, 2, 3];
+
+console.log(arr.push === Array.prototype.push); 
+// Array does not have push(), pop() and map() method when use this it checks prototype and give method
+
+// true
+
+
+
+
+
+
+
