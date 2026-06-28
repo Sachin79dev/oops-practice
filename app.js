@@ -402,3 +402,22 @@ fn(); // Sachin
 
 
 
+// Arrow Function this
+
+
+const user = {
+    name: "Sachin",
+    greet: () => {
+        console.log(this.name);
+    }
+}
+
+
+user.greet() // this will print blank space as "this" does not have Lexical Scope
+
+
+
+
+
+
+
