@@ -349,3 +349,30 @@ greet.call(user) // Sachin
 
 
 
+
+
+
+// apply() in this
+
+
+function introduce(city) {
+    console.log(`${this.name} is from ${city}`);
+}
+
+
+
+const person = {
+    name: "Sachin"
+}
+
+
+introduce.apply(person, ["Agra"]) // Sachin is from Agra
+
+
+
+
+
+
+
+
+
