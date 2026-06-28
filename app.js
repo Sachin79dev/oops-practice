@@ -421,3 +421,31 @@ user.greet() // this will print blank space as "this" does not have Lexical Scop
 
 
 
+// Event Handler Theory
+
+let btn = document.querySelector("#btn")
+
+
+btn.addEventListener("click", function() {
+    console.log(this);  
+})
+
+// In normal function this will print the exact targeted event 
+// <button id="btn">Click Me</button>
+
+
+
+btn.addEventListener("click", () => {
+    console.log(this);
+})
+
+
+// In the arrow function this will print window object 
+
+
+
+
+
+
+
+
