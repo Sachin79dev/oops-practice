@@ -536,3 +536,16 @@ greet.call(user2) // Hello Priyanka
 
 
 
+
+// Apply with Math.max
+
+const arr = [10, 20, 50, 5]
+
+
+console.log(Math.max.apply(null, arr)); // 50
+
+
+
+
+
+
