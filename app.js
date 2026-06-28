@@ -507,3 +507,32 @@ fn() // Sachin
 
 
 
+
+
+// Borrow Method Using call()
+
+const user1 = {
+    name: "Sachin"
+}
+
+
+const user2 = {
+    name: "Priyanka"
+}
+
+
+function greet() {
+    console.log(`Hello ${this.name}`);
+}
+
+
+
+greet.call(user1) // Hello Sachin
+greet.call(user2) // Hello Priyanka
+
+
+
+
+
+
+
