@@ -262,3 +262,31 @@ acc.withdraw(300)
 
 
 console.log(acc.getBalance()); // 700
+
+
+
+
+
+
+
+// Method and this 
+
+
+const user = {
+    name: "Ritik",
+    greet() {
+        console.log(this.name);
+    }
+}
+
+
+user.greet() // Ritik
+
+
+
+
+
+
+
+
+
