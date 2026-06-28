@@ -327,3 +327,25 @@ car.showBrand() // BMW
 
 
 
+// call() using this 
+
+
+function greet() {
+    console.log(this.name);
+}
+
+
+const user = {
+    name: "Sachin"
+}
+
+
+
+greet.call(user) // Sachin
+
+
+
+
+
+
+
