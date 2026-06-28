@@ -376,3 +376,29 @@ introduce.apply(person, ["Agra"]) // Sachin is from Agra
 
 
 
+// bind() using this
+
+
+function greet() {
+    console.log(this.name);
+}
+
+
+
+const user = {
+    name: "Sachin"
+}
+
+
+const fn = greet.bind(user)
+
+fn(); // Sachin
+
+
+
+
+
+
+
+
+
