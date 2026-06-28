@@ -290,3 +290,22 @@ user.greet() // Ritik
 
 
 
+// Default Binding 
+
+
+
+function show() {
+    console.log(this);
+}
+
+
+
+show() // will print window object API
+
+
+
+
+
+
+
+
