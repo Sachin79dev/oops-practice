@@ -599,3 +599,31 @@ p4.greet() // Hello I am Santosh
 
 
 
+// Student Class
+
+
+
+class Student {
+    constructor(name, marks) {
+        this.name = name
+        this.marks = marks
+    }
+
+    stdcls() {
+        console.log(`${this.name} has ${this.marks} marks`);
+    }
+}
+
+
+const result = new Student("Sachin", 80)
+
+
+result.stdcls() // Sachin has 80 marks
+
+
+
+
+
+
+
+
