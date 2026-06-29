@@ -627,3 +627,23 @@ result.stdcls() // Sachin has 80 marks
 
 
 
+// Car Class
+
+
+class Car {
+    constructor(brand) {
+        this.brand = brand
+    }
+
+    start() {
+        console.log(`${this.brand} started`);
+    }
+}
+
+
+
+
+const carStatus = new Car("Slavia")
+
+
+carStatus.start() // Slavia started
