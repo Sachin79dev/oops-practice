@@ -560,3 +560,42 @@ const dog = Object.create(animal)
 
 
 console.log(dog.eats); // true 
+
+
+
+
+
+
+
+
+// Shared Prototype Method
+
+
+function Person(name) {
+    this.name = name
+}
+
+
+Person.prototype.greet = function() {
+    console.log(`Hello I am ${this.name}`);
+}
+
+
+const p1 = new Person("Sachin")
+const p2 = new Person("Priyanka")
+const p3 = new Person("Vijay")
+const p4 = new Person("Santosh")
+
+
+p1.greet() // Hello I am Sachin
+p2.greet() // Hello I am Priyanka
+p3.greet() // Hello I am Vijay
+p4.greet() // Hello I am Santosh
+
+
+
+
+
+
+
+
