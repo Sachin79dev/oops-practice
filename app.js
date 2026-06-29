@@ -682,3 +682,38 @@ console.log(user.fullname); // Sachin Singh
 
 
 
+// Setter 
+
+
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    set fullName(value) {
+        const [firstName, lastName] = value.split(" ");
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+
+const p = new Person("Sachin", "Singh");
+
+console.log(p.fullName); // Sachin Singh
+
+p.fullName = "Aman Gupta";
+
+console.log(p.firstName); // Aman
+console.log(p.lastName);  // Gupta
+console.log(p.fullName);  // Aman Gupta
+
+
+
+
+
+
