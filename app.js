@@ -647,3 +647,38 @@ const carStatus = new Car("Slavia")
 
 
 carStatus.start() // Slavia started
+
+
+
+
+
+
+
+// Getter
+
+
+class User {
+    constructor(firstname, lastname) {
+        this.firstname = firstname
+        this.lastname = lastname
+    }
+
+    get fullname() {
+        return `${this.firstname} ${this.lastname}`
+    }
+}
+
+
+
+const user = new User("Sachin", "Singh")
+
+
+console.log(user.fullname); // Sachin Singh
+
+
+
+
+
+
+
+
