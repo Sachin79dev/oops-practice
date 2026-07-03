@@ -835,3 +835,23 @@ console.log(MathHelper.add(10, 20)); // 30
 
 
 
+// Static Property
+
+
+
+class MathHelper {
+    static PI() {
+        return 3.14159
+    }
+}
+
+
+
+console.log(MathHelper.PI()); // 3.14159
+
+
+
+
+
+
+
