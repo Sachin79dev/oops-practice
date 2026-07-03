@@ -752,3 +752,60 @@ const dev = new Developer("Sachin", 100000)
 
 dev.work() // Sachin has 100000 Salary
 dev.code() // Sachin is Coding....
+
+
+
+
+
+
+
+// Animal Hierarchy
+
+
+
+class Animal {
+    constructor(animal, breed) {
+        this.animal = animal
+        this.breed = breed
+    }
+
+
+    animalName() {
+        console.log(`This animal is ${this.animal}`);
+    }
+}
+
+
+
+class Dog extends Animal {
+    constructor(animal, breed) {
+        super(animal, breed)
+    }
+
+    animalInfo() {
+        console.log(`Animal is ${this.animal}`);
+    }
+}
+
+
+
+
+class Labrador extends Dog {
+    constructor(animal, breed) {
+        super(animal, breed)
+    }
+
+
+    dogBreed() {
+        console.log(`Animal is ${this.breed}`);
+    }
+}
+
+
+
+const animaltype = new Labrador("Dog", "Labrador")
+
+
+animaltype.animalName() // This animal is Dog
+animaltype.animalInfo() // Animal is Dog
+animaltype.dogBreed() // Animal is Labrador
