@@ -809,3 +809,29 @@ const animaltype = new Labrador("Dog", "Labrador")
 animaltype.animalName() // This animal is Dog
 animaltype.animalInfo() // Animal is Dog
 animaltype.dogBreed() // Animal is Labrador
+
+
+
+
+
+
+
+
+// Static Method
+
+
+class MathHelper {
+    static add(a, b) {
+        return a + b
+    }
+} 
+
+
+console.log(MathHelper.add(10, 20)); // 30
+
+
+
+
+
+
+
