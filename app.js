@@ -717,3 +717,38 @@ console.log(p.fullName);  // Aman Gupta
 
 
 
+
+
+
+// Employee Inheritance
+
+
+class Employee {
+    constructor(name, salary) {
+        this.name = name
+        this.salary = salary
+    }
+
+
+    work() {
+        console.log(`${this.name} has ${this.salary} Salary`);
+    }
+}
+
+
+class Developer extends Employee {
+    constructor(name, salary) {
+        super(name, salary)
+    }
+
+    code() {
+        console.log(`${this.name} is Coding....`);
+    }
+}
+
+
+
+const dev = new Developer("Sachin", 100000)
+
+dev.work() // Sachin has 100000 Salary
+dev.code() // Sachin is Coding....
